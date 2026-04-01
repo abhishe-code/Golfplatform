@@ -1,0 +1,6 @@
+import mongoose from "mongoose";
+
+const MONOGO_URL="mongodb+srv://champabhiankit_db_user:<db_password>@cluster0.eh7wg0u.mongodb.net/?appName=Cluster0"
+mongoose.connect("mongodb://127.0.0.1:27017/golfDB")
+  .then(() => console.log("MongoDB connected ✅"))
+  .catch((err) => console.log("DB Error:", err));
